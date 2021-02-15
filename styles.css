@@ -1,0 +1,76 @@
+@font-face{
+    font-family: 'system-font';
+    src: url('font/system-font.ttf');
+}
+@font-face{
+    font-family: 'crash-font';
+    src: url('font/crash-font.otf');
+}
+@font-face{
+    font-family: '92-font';
+    src: url('font/92-font.ttf');
+}
+@font-face{
+    font-family: 'text-font';
+    src: url('font/text-font.ttf')
+}
+
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+html body {
+    background-image: url('./images/fondo.jpg');
+    background-size: cover;
+}
+
+.img-responsive {
+    max-width: 80%;
+}
+.common-font {
+    font-family: 'text-font';
+    font-size:calc(50% + 1vw + 1vh);
+}
+
+.common-font a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid blue;
+}
+
+.t1 {
+    font-family: 'system-font';
+    font-size:calc(250% + 1vw + 1vh);
+    color: rgb(0, 187, 194);
+    -webkit-text-stroke: 2px rgb(0, 77, 80);
+}
+
+.t2 {
+    font-family: 'crash-font';
+    font-size:calc(230% + 1vw + 1vh);
+    color: rgb(255, 0, 106);
+    -webkit-text-stroke: 1px rgb(187, 0, 78);
+}
+
+.t3 {
+    font-family: '92-font';
+    font-size:calc(250% + 1vw + 1vh);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 3px black;
+}
+
+.gameplay1 {
+    width: 90%;
+}
+
+.text-gameplay1 {
+    font-family: 'text-font';
+    color: white;
+}
