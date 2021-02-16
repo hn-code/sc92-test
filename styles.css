@@ -17,7 +17,7 @@
 
 
 *{
-    margin:0px;
+    margin: 0px;
     padding: 0px;
 }
 
@@ -28,12 +28,20 @@
 
 html body {
     background-image: url('./images/fondo.jpg');
+    background-attachment: fixed;
     background-size: cover;
+    background-color: black;
 }
 
-.img-responsive {
-    max-width: 80%;
+html body header nav {
+    padding-top: 2% !important;
 }
+
+.logo-main {
+    width: 85%;
+    height: auto;
+}
+
 .common-font {
     font-family: 'text-font';
     font-size:calc(50% + 1vw + 1vh);
@@ -47,30 +55,70 @@ html body {
 
 .t1 {
     font-family: 'system-font';
-    font-size:calc(250% + 1vw + 1vh);
+    font-size:calc(100% + 3vw + 3vh);
     color: rgb(0, 187, 194);
     -webkit-text-stroke: 2px rgb(0, 77, 80);
 }
 
 .t2 {
     font-family: 'crash-font';
-    font-size:calc(230% + 1vw + 1vh);
+    font-size:calc(100% + 2vw + 2vh);
     color: rgb(255, 0, 106);
     -webkit-text-stroke: 1px rgb(187, 0, 78);
 }
 
 .t3 {
     font-family: '92-font';
-    font-size:calc(250% + 1vw + 1vh);
+    font-size:calc(100% + 2vw + 2vh);
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 3px black;
 }
 
-.gameplay1 {
+.gameplay{
     width: 90%;
 }
 
-.text-gameplay1 {
+.text-gameplay1, .text-gameplay2{
+    padding-top: 4%;
     font-family: 'text-font';
     color: white;
 }
+
+.row, .row>* {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.logo-name {
+    line-height: 1.0;
+}
+
+.cont-info{
+    margin-top: 8% !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.cont-info-bg {
+    background-image: url('./images/cont-info.png');
+}
+
+.section-info {
+    border: 2px solid blue;
+    border-radius: 10%;
+    padding: 3% 3% 3% 3%;
+    margin-top: 3% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.cont-name {
+    margin-top: 2% !important;
+}
+
+video {
+    border: 2px solid white;
+}
+
+
