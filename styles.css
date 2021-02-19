@@ -19,6 +19,13 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'text-font';
+    color: white;
+}
+
+.row, .row>* {
+    padding: 0px !important;
+    margin: 0px !important;
 }
 
 .clearfix{
@@ -55,46 +62,45 @@ html body header nav {
 
 .t1 {
     font-family: 'system-font';
-    font-size:calc(100% + 3vw + 3vh);
+    font-size:calc(100% + 4vw + 4vh);
     color: rgb(0, 187, 194);
     -webkit-text-stroke: 2px rgb(0, 77, 80);
 }
 
 .t2 {
     font-family: 'crash-font';
-    font-size:calc(100% + 2vw + 2vh);
+    font-size:calc(100% + 3vw + 3vh);
     color: rgb(255, 0, 106);
     -webkit-text-stroke: 1px rgb(187, 0, 78);
 }
 
 .t3 {
     font-family: '92-font';
-    font-size:calc(100% + 2vw + 2vh);
+    font-size:calc(100% + 3vw + 3vh);
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 3px black;
 }
 
-.gameplay{
-    width: 90%;
+.gameplay {
+    width: 100%;
+    height: auto;
+    margin: 5% 0% !important;
 }
 
 .text-gameplay1, .text-gameplay2{
-    padding-top: 4%;
+    padding: 3% 5% !important;
     font-family: 'text-font';
+    font-size: 20px;
     color: white;
 }
 
-.row, .row>* {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-}
 
 .logo-name {
     line-height: 1.0;
 }
 
 .cont-info{
-    margin-top: 8% !important;
+    margin-top: 0% !important;
     padding: 0 !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -107,10 +113,10 @@ html body header nav {
 .section-info {
     border: 2px solid blue;
     border-radius: 10%;
-    padding: 3% 3% 3% 3%;
-    margin-top: 3% !important;
+    margin-top: 5% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    padding: 2% 0;
 }
 
 .cont-name {
@@ -121,4 +127,35 @@ video {
     border: 2px solid white;
 }
 
+.cont-video{
+    padding: 2% 0%;
+}
 
+.align-g {
+    text-align: justify;
+}
+
+h3 {
+    font-size: 25em;
+    text-align: center;
+}
+
+#carousel {
+    margin-top: 5%;
+    border: 2px solid white;
+}
+
+span {
+    font-size: calc(80% + 1vw + 1vh);
+    display: block;
+    text-align: center;
+    margin: 0px auto !important;
+}
+
+.container-md {
+    position: absolute;
+    display: flex;
+    margin: auto !important;
+    width: 500px !important;
+
+}

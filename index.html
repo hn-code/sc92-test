@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="animations.css">
         <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <header>
@@ -26,7 +28,7 @@
             </nav>
         </header>
         <br>
-        <div class="row container-fluid cont-name">
+        <div class="row container-fluid cont-name"> 
             <div class="col-3"></div>
             <div class="align-items-center text-center logo-name col-6">
                 <span class="t1">SYSTEM</span><br>
@@ -36,44 +38,87 @@
             <div class="col-3"></div>
         </div>
         <div class="container-fluid cont-info">
-            <div class="row container-fluid mx-0">
+            <div class="row container-fluid mx-0"> 
                 <div class="col-1"></div>
-                    <div class="row col-10 cont-info-bg section-info">
+                    <div class="row col-10 cont-info-bg section-info" 
+                    data-aos="fade-right"
+                    data-aos-duration="800">
                         <div class="col-1"></div>
-                        <div class="col">
+                        <div class="col cont-video">
                             <video src="./videos/gameplay1.mp4" 
-                            type="video/mp4" autoplay controls loop muted webkit-playsinline playsinline class="gameplay"></video>
+                            type="video/mp4" autoplay controls loop muted webkit-playsinline playsinline 
+                            class="gameplay"></video>
                         </div>
-                        <div class="col text-gameplay1">
+                        <div class="col text-gameplay1 align-g">
                             <h3>Reflejos y Agilidad</h3>
                             Esto es texto breve donde se le muestra a la izquierda un gameplay mostrando la agilidad
                             y dinamismo del juego, buscando despertar en el lector de la pagina web la curiosidad de 
                             que tan rapido se puede volver el juego, donde dependera de sus reflejos y su persistencia
                             para poder pasar en los niveles. No se de marketing, solo tiro humo xd.                    
                         </div>
+                        <div class="col-1"></div>
                     </div>
-                    <div class="col-1"></div>
                 <div class="col-1"></div>
             </div>
             <div class="row container-fluid mx-0">
                 <div class="col-1"></div>
-                    <div class="row col-10 cont-info-bg section-info"> 
+                    <div class="row col-10 cont-info-bg section-info" 
+                    data-aos="fade-left"
+                    data-aos-duration="800"> 
                         <div class="col-1"></div>
-                        <div class="col text-gameplay2 ">
-                            <h3>Conoce los jefes</h3>
-                            Esto es texto breve donde se le muestra a la derecha algunos segundos de pelea
-                            contra jefes, dando una idea al lector de la variedad de enemigos y no la monotonia
-                            de los mismos personajes con diferentes re-colors como en otros juegos. 
-                            Repito, no se de marketing, solo tiro humo xd.                    
+                        <div class="col text-gameplay2 align-g">
+                            <h3>Descubre los Power-UP</h3>
+                            Esto es texto breve donde se le muestra a la derecha algunos power-up
+                            a modo de que el visitante a la pagina pueda apreciar la variedad de poderes
+                            y habilidades que tiene el personaje principal.
+                            Que se yo, sigo tirando humo por aca xd.                    
                         </div>
-                        <div class="col">
+                        <div class="col cont-video">
                             <video src="./videos/gameplay2.mp4" 
-                            type="video/mp4" autoplay controls loop muted webkit-playsinline playsinline class="gameplay"></video>
+                            type="video/mp4" autoplay controls loop muted webkit-playsinline playsinline 
+                            class="gameplay"></video>
                         </div>
                         <div class="col-1"></div>
                     </div>
                 <div class="col-1"></div>
             </div>
         </div>
+        <br><br><br>
+        <div 
+        data-aos="flip-up"
+        data-aos-duration="800">
+            <span>Galeria:</span>
+        </div>
+        <br>        
+        <div class="row"
+        data-aos="zoom-in"
+        data-aos-duration="800">
+                <div id="carousel" class="carousel slide container-md" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./images/galeria1.jpg" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/galeria2.jpg" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/galeria3.jpg" class="d-block w-100">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+
+            </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
