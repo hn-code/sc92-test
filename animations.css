@@ -7,12 +7,12 @@
     }
 }
 
-header nav div:hover {
+header div div:hover {
     transition: all .7s;
     transform: scale(1.20, 1.20);
 }
 
-header nav .links:hover {
+header div .links:hover {
     background-color: rgb(236, 236, 236);
 }
 

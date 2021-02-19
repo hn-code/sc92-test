@@ -40,13 +40,17 @@ html body {
     background-color: black;
 }
 
-html body header nav {
+html body header{
     padding-top: 2% !important;
 }
 
 .logo-main {
-    width: 85%;
+    width: 70%;
     height: auto;
+}
+
+.head-div {
+    margin: 0px auto !important;
 }
 
 .common-font {
@@ -81,12 +85,6 @@ html body header nav {
     -webkit-text-stroke: 3px black;
 }
 
-.gameplay {
-    width: 100%;
-    height: auto;
-    margin: 5% 0% !important;
-}
-
 .text-gameplay1, .text-gameplay2{
     padding: 3% 5% !important;
     font-family: 'text-font';
@@ -97,6 +95,7 @@ html body header nav {
 
 .logo-name {
     line-height: 1.0;
+    margin: 5% auto !important;
 }
 
 .cont-info{
@@ -106,29 +105,23 @@ html body header nav {
     margin-right: 0 !important;
 }
 
-.cont-info-bg {
-    background-image: url('./images/cont-info.png');
-}
-
 .section-info {
+    background-image: url('./images/cont-info.png');
     border: 2px solid blue;
-    border-radius: 10%;
-    margin-top: 5% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    border-radius: 20px;
+    margin: 5% auto !important;
     padding: 2% 0;
 }
 
-.cont-name {
-    margin-top: 2% !important;
-}
 
 video {
     border: 2px solid white;
+    width: 100%;
+    height: auto;
 }
 
 .cont-video{
-    padding: 2% 0%;
+    padding: 5% 5% !important;
 }
 
 .align-g {
@@ -145,17 +138,27 @@ h3 {
     border: 2px solid white;
 }
 
-span {
+.span {
+    width: 200px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    background-image: url('./images/cont-info.png');
     font-size: calc(80% + 1vw + 1vh);
     display: block;
     text-align: center;
     margin: 0px auto !important;
 }
 
-.container-md {
+.cont-md {
     position: absolute;
     display: flex;
-    margin: auto !important;
+    margin: 5% auto !important;
     width: 500px !important;
+}
 
+footer {
+    width: 80vw;
+    height: 10vh;
+    margin: 0% auto;
+    background-color: rgba(24, 24, 24, 0.8);
 }
