@@ -1,0 +1,248 @@
+@font-face{
+    font-family: 'system-font';
+    src: url('./font/system-font.ttf');
+}
+@font-face{
+    font-family: 'crash-font';
+    src: url('./font/crash-font.otf');
+}
+@font-face{
+    font-family: '92-font';
+    src: url('./font/92-font.ttf');
+}
+@font-face{
+    font-family: 'text-font';
+    src: url('font/text-font.ttf')
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'text-font';
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url('./media/img/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    background-color: black;
+    margin: 0%;
+    padding: 0%;
+}
+
+.logoS,
+.logoC,
+.logo92 {
+    display: inline-block;
+}
+
+.logoS {
+    font-family: 'system-font';
+    display: inline-block;
+    font-size: 41px;
+    color: rgb(0, 187, 194);
+    -webkit-text-stroke: 2px rgb(0, 77, 80);
+}
+
+.logoC {
+    font-family: 'crash-font';
+    display: inline-block;
+    font-size: 40px;
+    color: rgb(255, 0, 106);
+    -webkit-text-stroke: 1px rgb(187, 0, 78);
+}
+
+.logo92 {
+    font-family: '92-font';
+    display: inline-block;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+.navbar-brand {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar {
+    padding: 0px !important;
+}
+
+.navbar-toggler-icon{
+    width: 50px;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+li {
+    list-style: none;
+    border-radius: 5px;
+    margin: 0px 20px;
+}
+
+li a {
+    font-size: 20px;
+    margin: 0px 10px;    
+}
+
+.nav-link {
+    padding-right: 50px;
+    color: white;
+}
+
+.logoNav {
+    margin: 0% 30%;
+    border-radius: 5px;
+}
+
+li:hover,
+.logoNav:hover {
+    color: rgba(59, 64, 138,);
+    background-color: white;
+    transition: 0.7s;
+}
+
+
+#videoMain {
+    width: 100%;
+    border: 2px solid rgb(185, 185, 185);
+}
+
+.navTopOn {
+    background-color: rgba(59, 64, 138, 0.8);
+    transition: 0.8s;
+}
+
+.navTopOff {
+    background-color: transparent;
+    transition: 0.8s;
+}
+
+.character {
+    width: 50%;
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 255, 255));
+    filter: drop-shadow(0px 0px 10px rgb(0, 228, 171));
+    align-self: center;
+    justify-self: center;
+}
+
+.characterSection {
+    display: grid;
+    text-align: -webkit-center;
+}
+
+.infotext {
+    width: 50%;
+    text-align: justify;
+    margin: 5% auto;
+}
+
+.infotext p {
+    font-family: 'text-font';
+    font-size: 20px;
+    line-height : 50px;
+}
+
+.section{
+    background-image: url('./media/img/cont-info-1.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border: 5px solid rgb(47, 38, 168);
+    border-radius: 10px;
+    margin: 6% 0%;
+    margin-bottom: 0%;
+}
+
+.mediaTitle {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5%;
+    padding-top: 5%;
+}
+  
+.carousel {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.carousel-inner {
+    max-height: 65vh;
+    
+}
+
+.imgSlide {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-height: 50%;
+    border: 5px solid rgb(47, 38, 168);
+    border-radius: 10px;
+}
+
+
+/*Responsive changes*/
+@media screen and (min-width:0px) and (max-width:769px){
+    .logoNav {
+        margin: 0% 0%;
+    }
+
+    #navMain {
+        position:sticky;
+        background-color: rgba(59, 64, 138);
+    }
+
+    .personaje {
+        width: 70%;
+    }
+
+    .historia p{
+        line-height : 30px;
+    }
+
+    .carousel {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:820px) {
+    .personaje {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:820px) and (max-width:1080px){
+    .logoNav {
+        margin: 0% 10%;
+    }
+    .personaje {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    .logoNav {
+        margin: 0% 20%;
+    }
+}
+
+
